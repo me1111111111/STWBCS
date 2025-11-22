@@ -1,7 +1,7 @@
-/* index.css - Global, utility, and base styles. 
-  This includes the styles you provided previously, minus the body layout rules, 
-  which have been moved to App.css.
-*/
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 :root {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
