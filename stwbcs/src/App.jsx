@@ -1,4 +1,7 @@
 import { useState } from 'react';
+import './index.css' // Import global styles
+import './App.css'   // Import app specific styles
+
 function App() {
   const [currentPage, setCurrentPage] = useState('landing'); // 'landing' or 'info'
 
@@ -13,7 +16,7 @@ function App() {
   };
 
   return (
-    <div className="antialiased font-sans bg-[#1a1a1a] text-[#f0f0f0] m-0 p-0 overflow-hidden h-screen">
+    <div className="antialiased font-sans bg-[#1a1a1a] text-[#ffffff] m-0 p-0 overflow-hidden h-screen">
 
       {/* SECTION 1: Landing Page
         We use React's conditional rendering. This section will only
@@ -33,7 +36,7 @@ function App() {
           {/* This button uses a React 'onClick' handler */}
           <button
             id="enterButton"
-            className="bg-yellow-400 text-gray-900 font-bold text-2xl py-4 px-10 rounded-full shadow-lg transition-transform duration-200 ease-in-out hover:scale-105 hover:bg-yellow-300"
+            className="bg-yellow-400 text-red-900 font-bold text-2xl py-4 px-10 rounded-full shadow-lg transition-transform duration-200 ease-in-out hover:scale-105 hover:bg-yellow-300"
             onClick={handleShowInfo}
           >
             CLICK HERE!
@@ -157,6 +160,7 @@ function App() {
               Credits
             </button>
           </section>
+
 
         </div>
       )}
